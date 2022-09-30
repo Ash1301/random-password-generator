@@ -41,7 +41,9 @@ function generate() {
     }else {
         randomPassword()
         textEl.textContent = ""              
-    }       
+    }
+    
+    inputEl.value = ""
 }
 
 function copy1() {
