@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <section class="container">
+            <div class="container2">
+                <div class="head">
+                    <p>Generate a</p>
+                    <p class="head2">random password</p>
+                </div>
+                <p class="h">Never use an unsecure password again.</p>
+                <input type="text" placeholder="Input Value(8-15)" id="input-el" />
+                <button id="generate-el" onclick="generate()">Generate passwords</button>
+                <p id="text-el"></p>
+                <input type="text" placeholder="Generate Password" id="first-case" readonly>
+                <input type="text" placeholder="Generate Password" id="second-case" readonly>
+                <button id="btn1" onclick="copy1()">Copy Text</button>
+                <button id="btn2" onclick="copy2()">Copy Text</button>
+            </div>
+            <script src="index.js"></script>
+        </section>
+    </body>
+</html>
