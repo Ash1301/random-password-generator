@@ -36,14 +36,14 @@ function generate() {
     
     if (password === null || password === '') {
         textEl.textContent = "Hint: Please enter a value!"
-    }else if (password < 8 || password > 15 ) {
-        textEl.textContent = "Hint: Password should be between 8 and 15 characters!"
-    }else {
+    }else if (password >= 8 && password <= 15 ) {
         randomPassword()
-        textEl.textContent = ""              
+        textEl.textContent = ""
+        
+    }else {
+        textEl.textContent = "Hint: Password should be between 8 and 15 numbers!"              
     }
-    
-    inputEl.value = ""
+    inputEl.value = ""      
 }
 
 function copy1() {

@@ -82,7 +82,13 @@ button {
 #input-el {
     top: 294px;
     width: 170px;
-    left: 70px;  
+    left: 70px;
+    -moz-appearance: textfield;  
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 #text-el {
